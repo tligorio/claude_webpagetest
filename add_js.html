@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tiziana Ligorio - Hunter College</title>
+    <style>
+        :root {
+            --sage-green: #9CAF88;
+            --light-sage: #E8EDE4;
+            --dark-grey: #333333;
+            --light-grey: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--light-sage);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 1rem auto;
+            display: block;
+            border: 3px solid var(--sage-green);
+        }
+
+        nav {
+            background: var(--sage-green);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--light-grey);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--dark-grey);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--sage-green);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--light-sage);
+            padding-bottom: 0.5rem;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .course-card {
+            background: var(--light-grey);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .interest-tag {
+            background: var(--light-sage);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--dark-grey);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .course-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+                    <img src="headshot_small.jpg" alt="Professor portrait against white geometric background" class="profile-img">
+    <style>
+        .profile-img {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+        <h1>Dr. Tiziana Ligorio</h1>
+        <p>Doctoral Lecturer in Computer Science</p>
+        <p>Hunter College, New York</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Doctoral Lecturer in the Computer Science Department at Hunter College, New York. My research focuses on Machine Learning, particularly Deep Learning and Large Language Models. With a PhD in Machine Learning, I am passionate about bridging theoretical foundations with practical applications in artificial intelligence.</p>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <div class="course-list">
+                <div class="course-card">
+                    <h3>Introduction to Computer Science</h3>
+                    <p>Foundational concepts and programming principles for beginners.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Algorithms and Data Structures</h3>
+                    <p>Advanced algorithmic concepts and efficient data organization.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Deep Learning</h3>
+                    <p>Neural networks, deep architectures, and modern AI applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <span class="interest-tag">Deep Learning</span>
+                <span class="interest-tag">Large Language Models</span>
+                <span class="interest-tag">Machine Learning</span>
+                <span class="interest-tag">Natural Language Processing</span>
+                <span class="interest-tag">Artificial Intelligence</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Department of Computer Science<br>
+            Hunter College<br>
+            695 Park Ave<br>
+            New York, NY 10065</p>
+            <p>Email: [your.email]@hunter.cuny.edu</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Dr. Tiziana Ligorio - Hunter College</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
